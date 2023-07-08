@@ -1,0 +1,52 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0 ;
+  padding: 0 ;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#nprogress .bar {
+  background: rgb(5, 101, 180) !important;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px rgb(5, 101, 180), 0 0 5px rgb(5, 101, 180) !important;
+}
+
+.flex_center {
+  @apply flex justify-center items-center;
+}
+
+.flex_start {
+  @apply flex justify-start items-start;
+}
+
+.flex_end {
+  @apply flex justify-end items-end;
+}
+
+.flex_between {
+  @apply flex justify-between items-center;
+}
+
+.btn-plain {
+  @apply px-4 py-[6px] rounded font-semibold cursor-pointer text-sm  disabled:cursor-not-allowed disabled:opacity-50
+}
+
+.btn {
+  @apply px-4 py-[6px] bg-transparent border border-customBlue text-customBlue rounded font-semibold cursor-pointer text-sm hover:bg-customBlue/10 whitespace-nowrap disabled:cursor-not-allowed disabled:text-customBlue/50 disabled:border-customBlue/50 disabled:hover:bg-transparent
+}
+
+.btn2 {
+  @apply px-4 py-[6px] bg-transparent border border-red-500 text-red-500 rounded font-semibold cursor-pointer text-sm hover:bg-red-500/10 whitespace-nowrap disabled:cursor-not-allowed disabled:text-red-500/50 disabled:border-red-500/50 disabled:hover:bg-transparent
+}
+
+.btn-rounded {
+  @apply px-3 py-[6px] flex items-center gap-x-2 rounded-full cursor-pointer text-sm whitespace-nowrap disabled:cursor-not-allowed disabled:opacity-50
+}
